@@ -1,0 +1,50 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #1A1A1A;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #7EC8E3;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category, .goal, .product-card, .brand-logo {
+  flex: 1 1 calc(33% - 20px);
+  text-align: center;
+}
+
+.product-card img, .brand-logo img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.site-header, .site-footer {
+  background-color: #DFF4FF;
+  padding: 20px 0;
+  text-align: center;
+}
