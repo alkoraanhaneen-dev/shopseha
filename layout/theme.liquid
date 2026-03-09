@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ shop.name }}</title>
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+</head>
+<body>
+
+  {% section 'header' %}
+
+  {{ content_for_layout }}
+
+  {% section 'footer' %}
+
+  {{ content_for_footer }}
+</body>
+</html>
