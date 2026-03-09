@@ -1,0 +1,14 @@
+<section class="best-sellers">
+  <h2>Best Sellers</h2>
+  <div class="grid">
+    {% for product in collections.all.products | sort_by: 'best-selling' | limit: 6 %}
+      <div class="product-card">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.price | money }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
