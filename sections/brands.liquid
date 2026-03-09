@@ -1,0 +1,10 @@
+<section class="brands">
+  <h2>Our Brands</h2>
+  <div class="grid">
+    {% for brand in collections.brands.products %}
+      <div class="brand-logo">
+        <img src="{{ brand.featured_image | img_url: 'small' }}" alt="{{ brand.title }}">
+      </div>
+    {% endfor %}
+  </div>
+</section>
